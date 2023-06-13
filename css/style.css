@@ -1,0 +1,289 @@
+:root{
+    --main-color:rgb(0, 132, 253);
+    --main-color-lighter:rgb(181, 221, 255);
+    --second-color: rgb(151, 146, 228);
+    --padding-general:1rem 2rem;
+    --smartphone: 480px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+}
+.between{
+    justify-content: space-between;
+}
+.column{
+    flex-direction: column;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* header */
+header{
+    background-color: var(--main-color);
+    padding: var(--padding-general);
+    max-width: var(--smartphone);
+    margin-bottom: 2rem;
+}
+#nav-bar i{
+    color: white;
+    font-size: 2rem;
+}
+
+/* main */
+
+main{
+    max-width: var(--smartphone);
+}
+
+.container{
+    width: 100%;
+    max-width: var(--smartphone);
+}
+
+.row{
+    flex-wrap: wrap;
+}
+
+.col{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.col-1-3{
+    flex-basis:calc(100% / 3);
+}
+
+.col-2-3{
+    flex-basis:calc((100% / 3)*2);
+}
+
+.col-1-2{
+    flex-basis:50%;
+}
+
+h4, i{
+    color: white;
+}
+
+/* section 1 */
+
+#section1 {
+    margin-bottom: 5rem;
+}
+
+#section1 .col{
+    background-color: var(--main-color-lighter);
+    margin: 1rem 2rem;
+    padding: var(--padding-general);
+    border-radius: 15px; 
+}
+
+#section1 #colonna1{
+    padding-bottom: 0;
+    margin-bottom: 0;      
+}
+
+
+#colonna1 > h2, 
+#colonna1  > div, 
+#colonna1 > a {
+    margin: 2rem 0;
+}
+
+#section1 a *{
+    padding: 0 .3rem;
+}
+
+#section1 a{
+    padding: .5rem;
+    justify-content: center;    
+    background-color: var(--main-color);
+    
+    border-radius: 50px;
+    width: 300px;
+}
+
+#section1 img{
+    width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    display: block;
+}
+
+.common-col *{
+    padding: 0.7rem 0;
+    text-align: center;
+}
+
+.common-col i{
+    font-size: 100px;    
+}
+
+.common-col h2,
+.common-col i{
+    color: var(--main-color);
+}
+
+/* section 2 */
+
+#section2{
+    background-color: var(--second-color);
+    padding: var(--padding-general);
+}
+
+#section2 img{
+    width: 100%;
+}
+
+#section2 > *{
+    color: white;
+}
+
+.row > div{
+    margin: 3rem 0rem;
+}
+
+.card{
+    border-radius: 50px;
+}
+
+.white-bg{
+    background-color: white;
+}
+
+.card-img{
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.card-black *{
+    color: black;
+    text-align: center;
+    padding:0rem 2rem; 
+    margin: 1rem 0;
+}
+
+.card:nth-last-child(1){
+    padding-bottom: 1rem;
+}
+
+.italic{
+    font-style: italic;
+}
+.card i{
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: var(--second-color);
+}
+
+/* section 3 */
+
+.testimonials{
+    padding: 3rem 2rem;
+}
+
+.testimonials *{
+    text-align: center;
+    padding-bottom:2.5rem;
+}
+
+#section3 h2{
+    color: var(--second-color);
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+#section3 .testimonials div:nth-last-child(1){
+    line-height: 2rem;
+}
+
+.violet-bg{
+    background-color: var(--second-color);
+}
+#section3 img{
+    margin-top: 2rem;
+}
+.img-rounded{
+    border-radius: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-white *{
+    color: white;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+#section3 .card{
+    margin: 0 2rem 2rem;
+    padding-bottom: 1rem;
+}
+
+#section3 .container {
+    padding-bottom: 5rem;
+}
+
+/* section 4 */
+
+#section4 .container{
+    background-color: var(--second-color);
+}
+
+#section4 .row {
+    padding-bottom: 2rem;
+}
+
+#section4 h2{
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem 2rem;
+}
+
+#section4 .col{
+    background-color: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 2rem;
+}
+
+#section4 h3{
+    font-size: 3rem;
+}
+
+#section4 h4{
+    font-size: 1.5rem;
+}
+
+#section4 .col *{
+    margin: 1rem;
+}
+
+#section4 h3,
+#section4 h4{
+    color: var(--second-color);
+}
+
+#section4 .col p{
+    line-height: 2rem;
+}
+
+.more-button{
+    width: 50%;
+    padding: 1rem;
+    background-color: var(--second-color);
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+}
+.decoration0{
+    text-decoration: none;
+}
+
+/* section 5 */
