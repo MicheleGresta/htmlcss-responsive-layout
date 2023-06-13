@@ -2,6 +2,8 @@
     --main-color:rgb(0, 132, 253);
     --main-color-lighter:rgb(181, 221, 255);
     --second-color: rgb(151, 146, 228);
+    --third-color:rgb(253, 193, 95);
+    --footer-color:rgb(78, 78, 78);
     --padding-general:1rem 2rem;
     --smartphone: 480px;
 }
@@ -29,15 +31,46 @@ header{
     padding: var(--padding-general);
     max-width: var(--smartphone);
     margin-bottom: 2rem;
+    position: relative;
 }
 #nav-bar i{
     color: white;
     font-size: 2rem;
 }
 
+/* nav bar speciale ---------------------------------------------------------*/
+#nav-bar > a{
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+}
+
+
+
+.nav-bar-list{
+    align-items: center;
+    display: none;
+}
+
+#nav-bar > a:focus + .nav-bar-list{
+    display: flex;
+}
+
+.nav-bar-list span{
+    padding: 0.5rem 0;
+    color: white;
+}
+
+.nav-get-start{
+    padding: 1rem;
+    background-color: white;
+    border-radius: 30px;
+}
+
 /* main */
 
-main{
+main,
+footer{
     max-width: var(--smartphone);
 }
 
@@ -206,14 +239,17 @@ h4, i{
 .violet-bg{
     background-color: var(--second-color);
 }
+/* PROBLEMA CON LE 3 IMMAGINI */
 #section3 img{
     margin-top: 2rem;
+    border-radius: 50%;
+    width: 100%;
 }
-.img-rounded{
+/* .img-rounded{
     border-radius: 50%;
     width: 100%;
     object-fit: cover;
-}
+} */
 
 .card-white *{
     color: white;
@@ -287,3 +323,122 @@ h4, i{
 }
 
 /* section 5 */
+
+#section5{
+    padding: 4rem 2rem;
+}
+
+#section5 h2{
+    color: var(--second-color);
+    font-size: 3.5rem;
+}
+#section5 .row > div {
+    line-height: 2rem;
+    text-align: left;
+}
+
+#section5 h4{
+    color: var(--second-color);
+    font-size: 2rem;
+}
+
+.linkedin-button{
+    width: 60%;
+    background-color: var(--second-color);
+    border-radius: 30px;
+    padding: .5rem;
+}
+
+.linkedin-button *{
+    color: white;
+    text-align: center;
+}
+
+.about-image{
+    position: relative;
+    width: 50%;
+    border-radius: 50%;
+}
+
+.about-image img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.apici i{
+    width: 100%;
+    font-size: 4rem;
+    color: var(--second-color);
+}
+
+.apici{
+
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* section 6 */
+
+#section6{
+    padding: 4rem 2rem;
+    background-color: var(--second-color);
+}
+
+#section6 .row{
+    text-align: center;
+    padding: 1rem;
+}
+
+#section6 .row > *{
+    margin: 2rem 0;
+}
+
+#section6 h2{
+    color: var(--third-color);
+    font-size: 5rem;
+}
+
+#section6 h4{
+    font-size: 2rem;
+}
+
+#section6 p{
+    line-height: 2rem;
+}
+
+#section6 .get-started-button{
+    width: 70%;
+    padding: 1rem;
+    border-radius: 30px;
+    color: var(--second-color);
+    background-color: white;
+}
+
+#section6 .get-started-button{
+    letter-spacing: 3px;
+    margin: 0 auto;
+}
+
+#section6 .row > div,
+#section6 .row > p,
+#section6 span{
+    color: white;
+}
+
+#section6 .underline{
+    text-decoration: underline;
+}
+
+/* footer */
+
+footer{
+    background-color: var(--footer-color);
+    padding: 2rem 2rem;
+    color: white;
+}
+
+footer *{
+    text-align: center;
+}
+
